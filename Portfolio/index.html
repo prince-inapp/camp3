@@ -4,24 +4,29 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
+        <div id="container">
         <div id="navigation">
-            <a href="index.html">Home</a>
-            <a href="hobbies.html">My Hobbies</a>
-            <a href="work.html">My Work</a>
-            <a href="contact.html">Contact</a>
+            <ul id="nav">
+                <li class="active"><a href="index.html">Home Page</a></li>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
         </div>
-        <div>
-            <br>
+        <div id="content">
             <h1>My Portfolio</h1>
-            <p>Welcome to my Portfolio page!</p>
-            <img src="images/profile.jpg" width="150" height="180" alt="MyPhoto">
-            <p id="content">
-                Here is something about me: I follow my heart, I belive in myself, I live by high standards, I understand how precious time is, I trust my intuition and I speak up when needed.</p>
-            <p>There should be more here, but I don't know what yet.</p>
+            <img id="cat" src="images/profile.jpg" alt="My Image">
+            <p id="para1">Welcome to my portfolio page!</p>
+            <p id="para2">Here is something about me: I follow my heart, I <br>
+                beleive in myself, I live by high standards, <br>
+                I understand how precious time is, I trust my intuition <br>
+                and I speak up when needed.</p>
+            <p id="para3">There should be more here, but I don't know what yet</p>
+            <footer>
+                <hr>
+                Copyright&copy; 2022
+            </footer>
         </div>
-    </body>
-    <hr>
-    <footer>
-        <p>Copyright – All rights reserved</p>
-    </footer>    
+    </div>
+    </body>   
 </html>
