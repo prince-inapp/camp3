@@ -1,0 +1,8 @@
+#navigation {
+    float: left;
+    width: 200px;
+    clear:left;
+}
+#content {
+    margin-left: 200px;
+}
