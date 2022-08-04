@@ -47,6 +47,7 @@ function addStudent(){
     student.age = getInput("Enter Student Age");
     student.gender = getInput("Enter Student Gender");
     student.location_ = getInput("Enter Student Location");
+    alert("Name: "+student.name_+"\nClass :"+student.class_+"\nAge :"+student.age+"\nGender: "+student.gender+"\nLocation:"+student.location_)
     return student
 }
 
