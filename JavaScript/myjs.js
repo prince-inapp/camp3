@@ -30,64 +30,95 @@ var a = 5;
 //     alert(a+'is greater than'+b)
 // }
 
-switch(new Date().getDay()){
-    case 1:
-        day = "Monday";
-        break;
-    case 2:
-        day = "Tuesday"
-        break;
-    case 3:
-        day = "Wenesday"
-        break;
-    case 4:
-        day = "Thursday"
-        break;
-    case 5:
-        day = "Friday"
-        break;
+// switch(new Date().getDay()){
+//     case 1:
+//         day = "Monday";
+//         break;
+//     case 2:
+//         day = "Tuesday"
+//         break;
+//     case 3:
+//         day = "Wenesday"
+//         break;
+//     case 4:
+//         day = "Thursday"
+//         break;
+//     case 5:
+//         day = "Friday"
+//         break;
     
+// }
+// //alert(day)
+
+// // looping statements
+
+// var a = 0;
+// while(a < 10){
+//     //alert(a);
+//     a = a +1;
+// }
+// for (var i = 1; i <10; i++){
+//     //alert(i)
+// }
+
+// // js function
+
+// add = function (a, b){
+//     return a+b
+// };
+
+// var result = add(3,4);
+// //alert(result);
+
+// var sq = a => {
+//     console.log("NUmber :"+a);
+//     return a*a;
+// };
+
+// var res = sq(4)
+// console.log(res)
+
+// var student = {
+//     stud_name : 'Prince',
+//     age : 21,
+//     talk:function(){
+//         alert("hello")
+//     }
+// }
+
+// //alert(student.stud_name)
+// //student.talk();
+// student.location = 'TVM'
+// //alert(student.location)
+// student.something = ''
+
+// // JSON Objects
+// //creating a JSON obj usuing the stringify() methord
+
+// var jsonstring  = JSON.stringify({
+//     Name : 'Prince',
+//     age : 30,
+//     Address : {
+//         district : "TVM",
+//         state : "Kerala",
+//         place : "Technopark"
+//     } 
+// });
+// console.log(jsonstring)
+
+// var parsedjson = JSON.parse(jsonstring);
+// alert(parsedjson.Name);
+// alert(parsedjson.Address);
+// alert(parsedjson.Address.district);
+var myallbtns = document.querySelector('.btn');
+alert(myallbtns[0].textContent);
+
+var txtnamne = document.getElementsByName("txtcustname")
+alert(txtnamne[0].value);
+
+var handleClick = function(event){
+    alert(document.getElementsByName("txtname").value = '')
 }
-//alert(day)
 
-// looping statements
-
-var a = 0;
-while(a < 10){
-    //alert(a);
-    a = a +1;
-}
-for (var i = 1; i <10; i++){
-    //alert(i)
-}
-
-// js function
-
-add = function (a, b){
-    return a+b
-};
-
-var result = add(3,4);
-//alert(result);
-
-var sq = a => {
-    console.log("NUmber :"+a);
-    return a*a;
-};
-
-var res = sq(4)
-console.log(res)
-
-var student = {
-    stud_name : 'Prince',
-    age : 21,
-    talk:function(){
-        alert("hello")
-    }
-}
-
-//alert(student.stud_name)
-//student.talk();
-student.location = 'TVM'
-//alert(student.location)
-student.something = ''
+var mytbn = document.getElementsById('btn1');
+mytbn.addEventListener('click', handleClick)

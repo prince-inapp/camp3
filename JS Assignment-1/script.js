@@ -25,16 +25,19 @@ function toTitleCase(str){
     for(var i = 0; i < sentence.length; i++){
         console.log(sentence[i])
         sentence[i] = sentence[i][0].toUpperCase() + sentence[i+1].slice(i);
+        console.log(sentence[i])
     }
     return sentence.join(" ");
+console.log(toTitleCase("prince johnson"))
+
 }
 
 function getIntInput(msg){
     var num = parseInt(prompt(msg));
-    if(isNaN(num)){
+    /* if(isNaN(num)){
         alert("Invalid Input...Please Try Again")
         getIntInput(msg)
-    }
+    } */
     return num;
 }
 
@@ -63,7 +66,7 @@ function getIndex(stud_name){
 opt = getIntInput("Enter Option \n1: Add student\n 2: Edit Student\n 3: Delete Student\n 4: Display Student\n 5: Exit")
 while(opt!=5){
     if(opt == 1){
-        list_of_students.push(addStudent())
+        list_of_students.push(addStudent());
     }
     else if(opt == 2){
         var student_found = false;
