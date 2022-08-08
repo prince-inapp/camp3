@@ -1,0 +1,32 @@
+
+
+
+table, td {
+    margin: 30% 30% 30% 30%;
+    border: 1px solid grey ;
+}
+
+
+button {
+    padding: 30px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgb(163, 149, 134);
+    font-size: xx-large;
+}
+
+input{
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    font-size: xx-large;
+    border-radius: 10px;
+    background-color: rgb(216, 208, 200);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+

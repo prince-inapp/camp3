@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><button value="" onclick="clr()">C</button></td>
+                <td colspan="3"><input type="text" name="txtdisp" id="txtdisp">
+                <p id="errTxt"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="add" value="+" onclick="toTxt('+')">+</button></td>
+                <td><button id="one" value="1" onclick="toTxt('1')">1</button></td>
+                <td><button id="two" value="2" onclick="toTxt('2')">2</button></td>
+                <td><button id="three" value="3" onclick="toTxt('3')">3</button></td>
+            </tr>
+            <tr>
+                <td><button id="minus" value="-" onclick="toTxt('-')">-</button></td>
+                <td><button id="" value="4" onclick="toTxt('4')">4</button></td>
+                <td><button id="" value="5" onclick="toTxt('5')">5</button></td>
+                <td><button id="" value="6" onclick="toTxt('6')">6</button></td>
+            </tr>
+            <tr>
+                <td><button id="" value="*" onclick="toTxt('*')">*</button></td>
+                <td><button id="" value="7" onclick="toTxt('7')">7</button></td>
+                <td><button id="" value="8" onclick="toTxt('8')">8</button></td>
+                <td><button id="" value="9" onclick="toTxt('9')">9</button></td>
+            </tr>
+            <tr>
+                <td><button id="" value="/" onclick="toTxt('/')">/</button></td>
+                <td><button onclick="toTxt('.')">.</button></td>
+                <td><button id="" value="0" onclick="toTxt('0')">0</button></td>
+                <td><button onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
