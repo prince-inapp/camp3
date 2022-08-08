@@ -13,23 +13,28 @@
             <br>
             <input class="space" type="text" id="fname" name="fullName">
             <br>
+            <p id="fnameError" class="err"></p>
             <label class="space" for="formEmail">E-Mail</label>
             <br>
             <input class="space" type="email" id="femail" name="formEmail">
             <br>
+            <p id="femailError" class="err"></p>
             <label class="space" for="phnum">Phone Number(10 Digit Number)</label>
             <br>
             <input class="space" type="number" id="fphnumber" name="phnum">
             <br>
+            <p id="fphnumberError" class="err"></p>
             <label class="space" for="fpass">Password</label>
             <br>
             <input class="space" type="password" id="fpassword" name="fpass">
             <br>
+            <p id="fpasswordError" class="err"></p>
             <label class="space" for="cpass">Confirm Password</label>
             <br>
             <input class="space" type="password" id="cpassword" name="cpass">
             <br>
-            <button id="btnReg"  >Register</button>
+            <p id="cpasswordError" class="err"></p>
+            <button  type="button" id="btnReg" onclick="validate_form()"  >Register</button>
 
         </form>
     </div>
