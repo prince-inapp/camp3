@@ -23,11 +23,15 @@ print("Content-type: text/html\n\n")
 cgitb.enable()
 form = cgi.FieldStorage()
 name = form.getvalue('name')
+
 mail = form.getvalue('email')
 password = form.getvalue('password')
 emotions  = form.getlist('emotions')
 satisfaction = form.getvalue('satisfied')
-comments = form.getvalue('comment')
+if(form.getvalue('comment')):
+    comments = form.getvalue('comment')
+else:
+    comments = "No comments"
 photo = form['bio-photo']
 
 if photo.filename:
@@ -35,9 +39,9 @@ if photo.filename:
     file_name = os.path.basename(photo.filename)
     with open ('files/'+file_name, 'wb') as f:
         f.write(photo_data)
-        msg = "File uploaded successfully"
+        msg = True
 else:
-    msg = "No file uploaded"
+    msg = False
 
 location = form.getvalue('location')
 
@@ -49,7 +53,10 @@ print("""<html>
 <body>
 <div class="container">
 """)
-print('''<img src="files/{}" alt="{}" width="200" height="200">'''.format(file_name, file_name))
+if(msg):
+    print('''<img src="files/{}" alt="{}" width="200" height="200">'''.format(file_name, file_name))
+else:
+    print("<p>No Bio-Pic</p>")
 print("<p>Name: %s</p>" % name)
 print("<p>Email: %s</p>" % mail)
 print("<p>Password: %s</p>" % password)

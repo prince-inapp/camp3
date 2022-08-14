@@ -28,21 +28,27 @@
                         <li>Dissatisfied <input type="radio" name="satisfied" value="Dissatisfied"></li>
                         <li>Very Dissatisfied <input type="radio" name="satisfied" value="Very Dissatisfied"></li>
                 </ul>
-
-                    <li>Further Comments: <input type="textarea" name="comment"></li>
-                <li>Bio Photo:<input type="file" name="bio-photo"></li>
-                <li>Location visited :<select name="Location">
+                <br><li>
+                <label for="comments">Further Comments:</label>
+                    <textarea cols="30" rows="4" name="comment" id="comments"></textarea>
+                    </li>
+               <br>
+                    <li>Bio Photo:<input type="file" name="bio-photo"></li>
+               <br>
+                    <li>Location visited :<select name="location">
                     <option value="">Select a location</option>
                     <option value="London">London</option>
                     <option value="Paris">Paris</option>
                     <option value="Berlin">Berlin</option>
                     <option value="Rome">Rome</option>
                     <option value="NewYork">New York</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Other">Other</option>
                 </select>
                 </li>
             </ul>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="btnSub">
         </form>
     </body>
 </html>
